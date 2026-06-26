@@ -22,7 +22,7 @@ header {
     border: 2px solid #ccc;
     border-radius: 10px;
     /* Aquí cargas tu logo real */
-    background-image: url("../assets/image/logo.jpeg"); 
+    background-image: url("logo.jpeg"); 
     background-size: contain;
     background-repeat: no-repeat;
 
