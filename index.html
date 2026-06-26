@@ -4,25 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oscar Mancia | Portafolio</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="CSS/estilos.css">
     <link rel="icon" href="logo.png" type="image/png">
 </head>
 <body>
-    <header>
-        <img src="logo.jpeg" alt="Logo de Oscar Mancia" class="logo">
-        <nav>
-            <ul>
-                <li>Inicio</li>
+    <header class="main-header">
+        <div class="contenedor-logo">
+            <img src="assets/image/vacio.png" alt="Logo de la empresa" class="capa-transparente">
+        </div>
+        <nav class="navigation">
+            <ul class="nav-left">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                        Inicio <span class="arrow">▾</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#desarrollo">Desarrollo Web</a></li>
+                        <li><a href="#base-datos">Bases de Datos</a></li>
+                        <li><a href="#seguridad">Ciberseguridad</a></li>
+                    </ul>
+                </li>
             </ul>
+            
             <ul class="nav-right">
                 <li><a href="certificados.html">Certificados</a></li>
-                <li><a href="SobreMi.html">Sobre Mí</a></li>
+                <li><a href="SobreMi.html">Sobre mí</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <h1>Bienvenido a mi portafolio</h1>
         <p>Explora mis proyectos y certificaciones.</p>
+        <div class="contenedor-logo">
+            <img src="assets/image/vacio.png" alt="Logo de la empresa" class="capa-transparente">
+        </div>
     </main>
     <footer>
         <p>&copy; 2026 Oscar Mancia. Todos los derechos reservados.</p>
