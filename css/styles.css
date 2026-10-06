@@ -44,25 +44,26 @@
             padding: 15px 20px;
         }
 
-        .nav-logo {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-weight: bold;
-            font-size: 1.2rem;
-            color: white;
+        .contenedor-logo {
+            width: 10%; /* Ajusta al tamaño de tu logo */
+            height: auto;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            /* Aquí cargas tu logo real */
+            background-image: url("../src/profile.jpeg"); 
+            background-size: contain;
+            background-repeat: no-repeat;
         }
 
-        .nav-avatar {
-            width: 45px;
-            height: 55px;
-            border-radius: 50%; /* Hace la foto del texto */
-            object-fit: cover;
-            object-position: center top;
-            border: 2px solid #0f172a; /* Un borde oscuro elegante */
+        .capa-transparente {
+             width: 120%;
+            height: 100%;
+            /* Evita que arrastren la imagen transparente */
+            user-select: none;
+            -webkit-user-drag: none;
         }
 
-        .nav-logo span {
+        .contenedor-logo span {
             color: var(--azul-acento);
         }
 
