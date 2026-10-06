@@ -7,6 +7,7 @@
     <meta name="description" content="Estidiante en ingeniería en computación, con disponibilidad para trabajar en areas tecnicas, desarrollo de software, analisis de datos y automatización de procesos.">
     <link rel="shortcut icon" href="src/profile.jpeg" type="image/jpeg">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -15,7 +16,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="contenedor-logo">
-            <img src="src/vacio.png" alt="Logo de la empresa" class="capa-transparente">
+            <img src="src/vacio.png" alt="!Hola Mundo!" class="capa-transparente">
         </div>
             
             <!-- menu amburguesa para dispositivos moviles -->
@@ -75,25 +76,29 @@
             </div>
         </section>
 
-        <!-- SECCIÓN: HABILIDADES -->
-        <section id="habilidades">
-            <h3 class="section-title">Tecnologías y Competencias</h3>
-            <div class="card">
-                <div class="skills-container">
-                    <span class="badge">Java / Swing</span>
-                    <span class="badge">Python</span>
-                    <span class="badge">PHP</span>
-                    <span class="badge">SQL / MySQL</span>
-                    <span class="badge">phpMyAdmin</span>
-                    <span class="badge">Linux (Ubuntu/Lubuntu)</span>
-                    <span class="badge">Git / GitHub</span>
-                    <span class="badge">Consumo de APIs</span>
-                    <span class="badge">Excel Avanzado</span>
-                    <span class="badge">Android Studio</span>
-                    <span class="badge">Visual Studio Code</span>
+       <!-- SECCION DE HABILIDADES -->
+        <section id="habilidades" class="skills-section">
+            <h3 class="section-title">Habilidades Técnicas</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h4>Programación y Backend</h4>
+                    <p>Python (FastAPI), C++, PHP, JavaScript.</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Bases de Datos</h4>
+                    <p>MySQL, phpMyAdmin, gestión de registros y respaldos.</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Herramientas y Campo</h4>
+                    <p>Garmin eTrex (GPS/SIG), Excel avanzado (VBA), Lubuntu Linux.</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Desarrollo Web</h4>
+                    <p>HTML5, CSS3, Git, GitHub y control de versiones.</p>
                 </div>
             </div>
         </section>
+        
 
         <!-- SECCIÓN: EXPERIENCIA DESTACADA -->
         <section id="experiencia">
@@ -248,8 +253,46 @@
         </section>
 
     </div>
-    <footer>
-        <p>&copy;Copyright - Oscar Mancia | Todos los derechos Reservados</p>
-    </footer>
+    <!-- PIE DE PAGINA Y CONTACTO -->
+<footer class="site-footer" id="contacto">
+    <div class="footer-content">
+        <h3 class="section-title">Contacto y Redes Sociales</h3>
+        
+        <div class="footer-grid">
+            <!-- Teléfono -->
+            <div class="footer-card">
+                <h4>Teléfono</h4>
+                <p><a href="tel:+50498157658">+504 9815-7658</a></p>
+            </div>
+            
+            <!-- Correo Electrónico -->
+            <div class="footer-card">
+                <h4>Correo Electrónico</h4>
+                <p><a href="mailto:oscar.mancia.gis@gmail.com">oscar.mancia.gis@gmail.com</a></p>
+                <p><a href="mailto:oscardavidmanciarivera@gmail.com">oscardavidmanciarivera@gmail.com</a></p>
+            </div>
+            
+            <!-- Redes Sociales -->
+            <div class="footer-card">
+                <h4>Mis Perfiles</h4>
+                <div class="social-buttons">
+                    <a href="TU_ENLACE_DE_LINKEDIN_AQUI" target="_blank" class="social-icon linkedin-btn">
+                        <i class="fab fa-linkedin"></i>
+                        LinkedIn
+                    </a>
+                    <a href="TU_ENLACE_DE_FACEBOOK_AQUI" target="_blank" class="social-icon facebook-btn">
+                        <i class="fab fa-facebook"></i>
+                        Facebook
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright final -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 Oscar Mancia | Todos los derechos reservados</p>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
