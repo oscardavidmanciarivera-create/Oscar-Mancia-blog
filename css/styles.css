@@ -1,0 +1,351 @@
+/* --- VARIABLES DE DISEÑO (ESTILO INGENIERÍA) --- */
+:root {
+        --bg-principal: #f4f6f9;
+        --color-header: #0f172a;
+        --azul-acento: #3b82f6;
+        --azul-oscuro: #1e3a8a;
+        --texto-oscuro: #1e293b;
+        --texto-mutado: #64748b;
+        --blanco: #ffffff;
+        --sombra: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        --transicion: all 0.3s ease;
+    }
+
+    /* --- ESTILOS GLOBALES --- */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+        background-color: var(--bg-principal);
+        color: var(--texto-oscuro);
+        line-height: 1.6;
+        padding-bottom: 40px;
+    }
+
+        /* --- BARRA DE NAVEGACIÓN (RESPONSIVA) --- */
+        .navbar {
+            background-color: var(--color-header);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: var(--sombra);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 15px 20px;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: white;
+        }
+
+        .nav-avatar {
+            width: 45px;
+            height: 55px;
+            border-radius: 50%; /* Hace la foto del texto */
+            object-fit: cover;
+            object-position: center top;
+            border: 2px solid #0f172a; /* Un borde oscuro elegante */
+        }
+
+        .nav-logo span {
+            color: var(--azul-acento);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        .nav-link {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: var(--transicion);
+        }
+
+        .nav-link:hover {
+            color: var(--blanco);
+        }
+
+        /* Menú Hamburguesa (Oculto en Escritorio) */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+
+        .bar {
+            width: 25px;
+            height: 3px;
+            background-color: var(--blanco);
+            transition: var(--transicion);
+            border-radius: 2px;
+        }
+
+        /* --- CONTENEDOR PRINCIPAL --- */
+        .container {
+            max-width: 1100px;
+            margin: 80px auto 0 auto;
+            padding: 20px;
+        }
+
+        .cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.cert-card {
+    background-color: #1e293b; /* Fondo oscuro que hace juego con tu barra */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-card:hover {
+    transform: translateY(-5px); /* Efecto flotante al pasar el mouse */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.cert-img-container {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+    background-color: #0f172a;
+}
+
+.cert-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Recorta la imagen para que encaje perfectamente */
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
+}
+
+.cert-card:hover .cert-thumb {
+    opacity: 1; /* Ilumina la imagen al pasar el mouse */
+}
+
+.cert-info {
+    padding: 15px;
+    color: white;
+}
+
+.cert-info h4 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.issuer {
+    font-size: 0.85rem;
+    color: #94a3b8; /* Gris claro para la institución */
+    margin-bottom: 15px;
+}
+
+.btn-cert {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #2563eb; /* Azul brillante llamativo */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.btn-cert:hover {
+    background-color: #1d4ed8; /* Azul más oscuro al dar clic */
+}
+
+        /* --- SECCIÓN HERO (SOBRE MÍ) --- */
+        .hero {
+            background: linear-gradient(135deg, var(--color-header) 0%, #1e293b 100%);
+            color: var(--blanco);
+            padding: 40px 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: var(--sombra);
+        }
+
+        .hero h1 {
+            font-size: 2rem;
+            margin-bottom: 5px;
+        }
+
+        .hero h2 {
+            font-size: 1.1rem;
+            color: var(--azul-acento);
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            color: #cbd5e1;
+            font-size: 1rem;
+            text-align: justify;
+            max-width: 850px;
+        }
+
+        /* --- SECCIONES REUTILIZABLES --- */
+        h3.section-title {
+            font-size: 1.25rem;
+            color: var(--azul-oscuro);
+            margin: 35px 0 15px 0;
+            padding-left: 10px;
+            border-left: 4px solid var(--azul-acento);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: var(--blanco);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: var(--sombra);
+            transition: var(--transicion);
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+        }
+
+        /* --- SECCIÓN: SKILLS (BADGES) --- */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .badge {
+            background-color: #eff6ff;
+            color: var(--azul-oscuro);
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border: 1px solid #bfdbfe;
+        }
+
+        /* --- SECCIÓN: CERTIFICACIONES (TABLA RESPONSIVA) --- */
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+            background-color: var(--blanco);
+            border-radius: 8px;
+            box-shadow: var(--sombra);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+
+        th {
+            background-color: var(--azul-oscuro);
+            color: var(--blanco);
+            padding: 12px 16px;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 12px 16px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .cert-code {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f1f5f9;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+            color: #334155;
+        }
+
+        /* --- MEDIA QUERIES (ADAPTACIÓN A MÓVILES) --- */
+        @media (max-width: 768px) {
+            /* Transformación del Menú a Hamburguesa */
+            .menu-toggle {
+                display: flex;
+            }
+
+            .nav-menu {
+                position: absolute;
+                top: 60px;
+                left: -100%;
+                flex-direction: column;
+                background-color: var(--color-header);
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+                padding: 20px 0;
+                gap: 15px;
+            }
+
+            /* Clase activa que el JavaScript encenderá/apagará */
+            .nav-menu.active {
+                left: 0;
+            }
+
+            /* Animación del ícono de tres rayas a una X */
+            .menu-toggle.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+            .menu-toggle.active .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+            .menu-toggle.active .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+
+            .hero h1 { font-size: 1.6rem; }
+            .card-grid { grid-template-columns: 1fr; }
+            table, th, td { font-size: 0.85rem; padding: 10px; }
+        }
+
+        .PruebaScript {
+            color: #1e3a8a;
+            background-color: #5fd4a3;
+            margin: 8px;
+            padding: 8%;
+            border: 9px 0;
+            border-radius: 80px 5px 80px ;
+        }
+
+        footer {
+            text-align: center;
+        }

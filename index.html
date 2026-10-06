@@ -3,44 +3,254 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oscar Mancia | Portafolio</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="icon" href="logo.png" type="image/png">
+    <title>Oscar Mancía | Portafolio</title>
+    <meta name="description" content="Estidiante en ingeniería en computación, con disponibilidad para trabajar en areas tecnicas, desarrollo de software, analisis de datos y automatización de procesos.">
+    <link rel="shortcut icon" href="src/profile.jpeg" type="image/jpeg">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header class="main-header">
-        <div class="contenedor-logo">
-            <img src="vacio.png" alt="Logo de la empresa" class="capa-transparente">
-        </div>
-        <nav class="navigation">
-            <ul class="nav-left">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
-                        Inicio <span class="arrow">▾</span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#desarrollo">Desarrollo Web</a></li>
-                        <li><a href="#base-datos">Bases de Datos</a></li>
-                        <li><a href="#seguridad">Ciberseguridad</a></li>
-                    </ul>
-                </li>
-            </ul>
+
+    <!-- BARRA DE NAVEGACION -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="src/profile.jpeg" class="nav-avatar" alt="ODMR">
+                <span>oscarmancia.dev</span>
+            </div>
             
-            <ul class="nav-right">
-                <li><a href="certificados.html">Certificados</a></li>
-                <li><a href="SobreMi.html">Sobre mí</a></li>
+            <!-- menu amburguesa para dispositivos moviles -->
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="SobreMi.html" class="nav-link">Sobre Mí</a></li>
+                <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                <li><a href="#experiencia" class="nav-link">Experiencia</a></li>
+                <li><a href="#certificaciones" class="nav-link">Certificaciones</a></li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Bienvenido a mi portafolio</h1>
-        <p>Explora mis proyectos y certificaciones.</p>
-        <div class="contenedor-logo">
-            <img src="vacio.png" alt="Logo de la empresa" class="capa-transparente">
         </div>
-    </main>
+    </nav>
+
+    <!-- CONTENEDOR DE LA PÁGINA -->
+    <div class="container">
+        
+        <!-- SECCIÓN: HERO / SOBRE MÍ -->
+        <section id="sobre-mi" class="hero">
+            <h1>Oscar David Mancía Rivera</h1>
+            <h2>Estudiante de Ingeniería en Computación | Técnico en Informática</h2>
+            <p>
+                Con experiencia en la gestión, análisis y digitalización de datos aplicados al sector agroindustrial (APROCAJER). Con un fuerte enfoque en el desarrollo de software, la arquitectura de bases de datos y la automatización de procesos mediante soluciones tecnológicas eficientes que optimizan la toma de decisiones. <br> Asi como experiencia en campo mediante levantamiento de poligonos y formularios, creacion de kml, dise&ntilde;o de mapas y análisis de datos geoespaciales, dis&ntilde;o web y dise&ntilde;o de contenido digital "Vi&ntilde;etas, anuncios".
+            </p>
+        </section>
+
+        <!-- seccion de certificaciones -->
+        <section id="certificaciones">
+            <h3 class="section-title">Certificaciones y Logros</h3>
+            <div class="cert-grid">
+        
+                <div class="cert-card">
+                    <div class="cert-img-container">
+                    <img src="src/screen01.jpg" alt="Certificado Informática" class="cert-thumb">
+                    </div>
+                    <div class="cert-info">
+                    <h4>Bachillerato Técnico Profesional en Informática</h4>
+                    <p class="issuer">Secretaría de Educación de Honduras</p>
+                    <a href="assets/programar-en-arduino.pdf" target="_blank" class="btn-cert">Ver Documento</a>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-img-container">
+                    <img src="src/screen01.jpg" alt="Certificado MySQL" class="cert-thumb">
+                    </div>
+                    <div class="cert-info">
+                    <h4>Curso Avanzado de Base de Datos MySQL</h4>
+                    <p class="issuer">E-Learning Platform</p>
+                    <a href="base-de-datos-MySQL.pdf" target="_blank" class="btn-cert">Ver Documento</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN: HABILIDADES -->
+        <section id="habilidades">
+            <h3 class="section-title">Tecnologías y Competencias</h3>
+            <div class="card">
+                <div class="skills-container">
+                    <span class="badge">Java / Swing</span>
+                    <span class="badge">Python</span>
+                    <span class="badge">PHP</span>
+                    <span class="badge">SQL / MySQL</span>
+                    <span class="badge">phpMyAdmin</span>
+                    <span class="badge">Linux (Ubuntu/Lubuntu)</span>
+                    <span class="badge">Git / GitHub</span>
+                    <span class="badge">Consumo de APIs</span>
+                    <span class="badge">Excel Avanzado</span>
+                    <span class="badge">Android Studio</span>
+                    <span class="badge">Visual Studio Code</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: EXPERIENCIA DESTACADA -->
+        <section id="experiencia">
+            <h3 class="section-title">Experiencia Destacada</h3>
+            <div class="card-grid">
+                <div class="card">
+                    <h4 style="color: var(--azul-oscuro);">Analista de Datos y Soporte</h4>
+                    <p style="font-size: 0.85rem; color: var(--texto-mutado); font-weight: 600; margin-bottom: 10px;">APROCAJER | Noviembre 2026 - Agosto 2026</p>
+                    <p style="font-size: 0.95rem; text-align: justify;">
+                        Sistematización y control de calidad de datos en bases físicas y digitales para una cartera de más de 600 productores. Uso de herramientas SIG y monitoreo satelital para análisis de deforestación y georreferenciación.
+                    </p>
+                </div>
+                <div class="card">
+                    <h4 style="color: var(--azul-oscuro);">Infraestructura Web y Licenciamiento</h4>
+                    <p style="font-size: 0.85rem; color: var(--texto-mutado); font-weight: 600; margin-bottom: 10px;">Proyectos de Automatización</p>
+                    <p style="font-size: 0.95rem; text-align: justify;">
+                        Despliegue y configuración de portales corporativos usando GitHub Pages, administración de entornos DNS y gestión de licenciamientos empresariales en la nube.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN: CERTIFICACIONES -->
+        <section id="certificaciones">
+            <h3 class="section-title">Certificaciones Verificables | Plataforma Infop</h3>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Certificación Técnica</th>
+                            <th>Código de Registro</th>
+                            <th>Emisión</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Administración de Base de Datos MySQL</td>
+                            <td><span class="cert-code">2745945</span></td>
+                            <td>Mayo 2026</td>
+                        </tr>
+                        <tr>
+                            <td>Diseño Web con HTML 5 y WordPress</td>
+                            <td><span class="cert-code">2602821</span></td>
+                            <td>Junio 2025</td>
+                        </tr>
+                        <tr>
+                            <td><a href="assets/programar-en-arduino.pdf" target="_blank">Programación en Arduino</a></td>
+                            <td><span class="cert-code">2628263</span></td>
+                            <td>Julio 2025</td>
+                        </tr>
+                        <tr>
+                            <td>Microsoft Excel Avanzado</td>
+                            <td><span class="cert-code">2648522</span></td>
+                            <td>Sept 2025</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://1drv.ms/u/c/1d8e43e623c58f13/IQCuKkyFaoohQrWP0G4y3yodAVsd5ztSv6L5rQoF92-gp1k?e=5Ewnxb">Etica Profesional</a></td>
+                            <td><span class="cert-code">2648522</span></td>
+                            <td>Sept 2025</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="certificaciones">
+            <h3 class="section-title">Certificaciones de Agricultura | CERTIFICACION DE FINCAS</h3>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Curso de Rain Forest Alliance</th>
+                            <th>Estandar</th>
+                            <th>Emisión</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Rain Forest Alliance (SAS42)</td>
+                            <td><span class="cert-code">Estandar de Agricultura Sostenible</span></td>
+                            <td>Agosto 2026</td>
+                        </tr>
+                        <tr>
+                            <td>Rain Forest Alliance (EAR41)</td>
+                            <td><span class="cert-code">Estandar de Agricultura Regenerativa</span></td>
+                            <td>Agosto 2025</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!--Curso Fairt Trade-->
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Curso de Fairt Trade</th>
+                            <th>Código de Registro</th>
+                            <th>Emisión</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Indicador</td>
+                            <td><span class="cert-code">N/A</span></td>
+                            <td>Agosto 2026</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!--Curso de Organico-->
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Curso de Organico USDA Y EU</th>
+                            <th>Código de Registro</th>
+                            <th>Emisión</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Indicador</td>
+                            <td><span class="cert-code">N/A</span></td>
+                            <td>Agosto 2026</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!--Curso C.A.F.E. Practices-->
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Curso C.A.F.E. Practices</th>
+                            <th>Version</th>
+                            <th>Emisión</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Indicador</td>
+                            <td><span class="cert-code">N/A</span></td>
+                            <td>Agosto 2026</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </div>
     <footer>
-        <p>&copy; 2026 Oscar Mancia. Todos los derechos reservados.</p>
+        <p>&copy;Copyright - Oscar Mancia | Todos los derechos Reservados</p>
     </footer>
 </body>
 </html>
