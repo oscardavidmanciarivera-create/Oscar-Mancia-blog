@@ -1,0 +1,87 @@
+/* Contenedor principal de la página Sobre Mi */
+.about-container {
+    max-width: 900px;
+    margin: 100px auto 40px auto; /* El 100px superior evita que la barra fija lo tape */
+    padding: 0 20px;
+    color: #ffffff;
+}
+
+.about-hero {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.about-img-box img.profile-pic {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #238636;
+}
+
+.about-text-box {
+    flex: 1;
+    min-width: 250px;
+}
+
+.about-text-box h2 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.about-subtitle {
+    color: #58a6ff;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.about-text-box p {
+    color: #8b949e;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Tarjetas de detalles (Educación y Experiencia) */
+.about-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.detail-card {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.detail-card h3 {
+    color: #58a6ff;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.detail-card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.detail-card li {
+    color: #8b949e;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}

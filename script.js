@@ -16,6 +16,15 @@
             });
         });
 
+// Desactivar clic derecho en todo el documento
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+// O, para ser menos intrusivo, solo desactivarlo en las imágenes de la clase 'nav-logo-img'
+const logoImages = document.querySelectorAll('.nav-logo-img');
+logoImages.forEach(img => {
+    img.addEventListener('contextmenu', event => event.preventDefault());
+});
+
         
 
         

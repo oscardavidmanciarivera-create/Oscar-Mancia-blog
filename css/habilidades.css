@@ -103,3 +103,8 @@
     line-height: 1.5;
     margin: 0;
 }
+
+/* Empuja el contenido hacia abajo solo en las páginas internas para que la barra fija no lo tape */
+.cert-container, .experience-container, .skills-container, .about-container {
+    margin-top: 90px; /* Espacio exacto para que el título quede libre debajo de la barra */
+}
