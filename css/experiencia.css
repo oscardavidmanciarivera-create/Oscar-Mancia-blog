@@ -1,0 +1,102 @@
+/* Contenedor de Experiencia */
+.experience-section {
+    padding: 60px 20px;
+    background-color: #0d1117;
+    color: #ffffff;
+}
+
+.experience-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.experience-section .section-title {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.section-desc {
+    color: #8b949e;
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+/* Estilo de la Línea de Tiempo (Timeline) */
+.timeline {
+    position: relative;
+    border-left: 2px solid #30363d;
+    margin-left: 20px;
+    padding-left: 30px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -36px;
+    top: 0;
+    width: 14px;
+    height: 14px;
+    background-color: #238636;
+    border-radius: 50%;
+    border: 3px solid #0d1117;
+}
+
+.timeline-content {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    padding: 25px;
+    border-radius: 10px;
+    transition: border-color 0.2s ease;
+}
+
+.timeline-content:hover {
+    border-color: #58a6ff;
+}
+
+.timeline-date {
+    display: inline-block;
+    background-color: #21262d;
+    color: #58a6ff;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.timeline-content h3 {
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.timeline-content h4 {
+    font-size: 1rem;
+    color: #8b949e;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.timeline-content p {
+    color: #8b949e;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.timeline-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.timeline-content li {
+    color: #8b949e;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
